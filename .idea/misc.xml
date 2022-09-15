@@ -3,7 +3,16 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/LENOVO/AndroidStudioProjects/PusatTugasAkhir/app/src/main/res/layout/activity_main.xml" value="0.264" />
+        <entry key="..\:/Users/HAFIZ/StudioProjects/PTB_B_KEL_9/app/src/main/res/layout/activity_main.xml" value="0.2" />
+        <entry key="..\:/Users/HAFIZ/StudioProjects/PTB_B_KEL_9/app/src/main/res/layout/beranda.xml" value="0.2234375" />
+        <entry key="..\:/Users/HAFIZ/StudioProjects/PTB_B_KEL_9/app/src/main/res/layout/daftar_ta.xml" value="0.1984375" />
+        <entry key="..\:/Users/HAFIZ/StudioProjects/PTB_B_KEL_9/app/src/main/res/layout/detail_logbook.xml" value="0.1984375" />
+        <entry key="..\:/Users/HAFIZ/StudioProjects/PTB_B_KEL_9/app/src/main/res/layout/edit_logbook.xml" value="0.19947916666666668" />
+        <entry key="..\:/Users/HAFIZ/StudioProjects/PTB_B_KEL_9/app/src/main/res/layout/ganti_password.xml" value="0.19947916666666668" />
+        <entry key="..\:/Users/HAFIZ/StudioProjects/PTB_B_KEL_9/app/src/main/res/layout/logbook_ta.xml" value="0.1984375" />
+        <entry key="..\:/Users/HAFIZ/StudioProjects/PTB_B_KEL_9/app/src/main/res/layout/profile.xml" value="0.19947916666666668" />
+        <entry key="..\:/Users/HAFIZ/StudioProjects/PTB_B_KEL_9/app/src/main/res/layout/tambah_logbook.xml" value="0.1984375" />
+        <entry key="..\:/Users/HAFIZ/StudioProjects/PTB_B_KEL_9/app/src/main/res/layout/ubah_profil.xml" value="0.19947916666666668" />
       </map>
     </option>
   </component>
