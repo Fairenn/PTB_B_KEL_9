@@ -10,5 +10,6 @@ public class form_edit_logbook extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.form_edit_logbook);
+
     }
 }

@@ -14,8 +14,15 @@
         android:theme="@style/Theme.PusatTugasAkhir"
         tools:targetApi="31">
         <activity
-            android:name=".beranda"
-            android:exported="false" />
+            android:name=".login"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
         <activity
             android:name=".form_pengajuan_sidang_ta"
             android:exported="false" />
@@ -33,13 +40,7 @@
             android:exported="false" />
         <activity
             android:name=".MainActivity"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+            android:exported="false"/>
     </application>
 
 </manifest>
