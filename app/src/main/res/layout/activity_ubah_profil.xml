@@ -73,7 +73,7 @@
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/textInputLayout15"
-        android:layout_width="409dp"
+        android:layout_width="380dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         app:boxBackgroundColor="#FFFFFF"
@@ -82,7 +82,7 @@
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:hint="No HP" />
     </com.google.android.material.textfield.TextInputLayout>
 

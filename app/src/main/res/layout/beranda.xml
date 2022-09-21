@@ -27,6 +27,7 @@
         android:id="@+id/imageView4"
         android:layout_width="415dp"
         android:layout_height="65dp"
+        android:layout_marginBottom="4dp"
         android:src="@drawable/bottom_navigation"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
@@ -64,48 +65,50 @@
         app:layout_constraintTop_toTopOf="@+id/textView2" />
 
     <ImageView
-        android:id="@+id/imageView6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="9dp"
+        android:id="@+id/home"
+        android:layout_width="70dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="16dp"
         android:src="@drawable/home_button"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/imageView4" />
+        app:layout_constraintBottom_toBottomOf="@+id/logbook"
+        app:layout_constraintEnd_toStartOf="@+id/logbook" />
 
     <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="75dp"
-        android:layout_marginBottom="9dp"
+        android:id="@+id/logbook"
+        android:layout_width="70dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="16dp"
         android:src="@drawable/logbook_button"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/imageView4" />
+        app:layout_constraintBottom_toBottomOf="@+id/profil"
+        app:layout_constraintEnd_toStartOf="@+id/profil" />
 
     <ImageView
-        android:id="@+id/imageView5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="9dp"
+        android:id="@+id/profil"
+        android:layout_width="70dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="10dp"
         android:src="@drawable/profile_button"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView4"
+        app:layout_constraintEnd_toEndOf="@+id/imageView4"
         app:layout_constraintStart_toStartOf="@+id/imageView4" />
 
     <ImageView
-        android:id="@+id/imageView7"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="75dp"
+        android:id="@+id/semhas"
+        android:layout_width="70dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
         android:src="@drawable/semhas_button"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView5"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintBottom_toBottomOf="@+id/profil"
+        app:layout_constraintStart_toEndOf="@+id/profil" />
 
     <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:id="@+id/sidangta"
+        android:layout_width="70dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
         android:src="@drawable/sidangta_button"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView7"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintBottom_toBottomOf="@+id/semhas"
+        app:layout_constraintStart_toEndOf="@+id/semhas" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
