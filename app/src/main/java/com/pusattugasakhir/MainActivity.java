@@ -21,22 +21,21 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
         bottomNavigation = findViewById(R.id.bottom_navigation);
         //getSupportActionBar().setDisplayOptions(ActionBar.DISPLAY_SHOW_CUSTOM);
         //getSupportActionBar().setCustomView(R.layout.toolbar_title_layout);
 
-        getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new HomeFragment() ).commit();
-
+        getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new HomeHeaderFragment() ).commit();
         bottomNavigation.setOnItemSelectedListener(new NavigationBarView.OnItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
                 Fragment selectedFragment = null;
 
+
                 switch (item.getItemId()){
 
                     case R.id.nav_home:
-                        selectedFragment = new HomeFragment();
+                        selectedFragment = new HomeHeaderFragment();
                         getSupportActionBar().setTitle("Beranda");
                         break;
                     case R.id.nav_logbook:

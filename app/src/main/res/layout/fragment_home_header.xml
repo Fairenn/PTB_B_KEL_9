@@ -39,8 +39,8 @@
                 android:layout_marginTop="4dp"
                 android:text="@string/nama_mahasiswa"
                 android:textColor="@color/white"
-                android:textSize="24sp"/>
-                //tools:text="@tools:sample/full_names" />
+                android:textSize="24sp" />
+            //tools:text="@tools:sample/full_names" />
 
             <TextView
                 android:id="@+id/tv_ta"
@@ -59,7 +59,9 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_weight="1"
+            android:src="@drawable/profil"
             tools:src="@drawable/profil" />
     </LinearLayout>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

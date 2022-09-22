@@ -15,6 +15,7 @@ import android.view.ViewGroup;
  */
 public class HomeHeaderFragment extends Fragment {
 
+
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
@@ -25,6 +26,7 @@ public class HomeHeaderFragment extends Fragment {
     private String mParam2;
 
     public HomeHeaderFragment() {
+
         // Required empty public constructor
     }
 
@@ -61,4 +63,5 @@ public class HomeHeaderFragment extends Fragment {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_home_header, container, false);
     }
+
 }

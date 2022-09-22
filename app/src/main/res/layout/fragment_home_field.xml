@@ -21,7 +21,7 @@
                 android:id="@+id/textView11"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Detail TA"
+                android:text="Detail Logbook"
                 android:layout_marginLeft="5dp"
                 android:textColor="@color/purple_200" />
 
@@ -41,7 +41,7 @@
                 android:id="@+id/textView12"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Detail TA"
+                android:text="Detail Semhas"
                 android:layout_marginLeft="5dp"
                 android:textColor="@color/purple_200" />
 
