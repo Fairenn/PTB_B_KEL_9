@@ -13,9 +13,11 @@
         <entry key="..\:/Users/HAFIZ/StudioProjects/PTB_B_KEL_9/app/src/main/res/layout/beranda.xml" value="0.22" />
         <entry key="..\:/Users/HAFIZ/StudioProjects/PTB_B_KEL_9/app/src/main/res/layout/daftar_ta.xml" value="0.1984375" />
         <entry key="..\:/Users/HAFIZ/StudioProjects/PTB_B_KEL_9/app/src/main/res/layout/detail_logbook.xml" value="0.1984375" />
-        <entry key="..\:/Users/HAFIZ/StudioProjects/PTB_B_KEL_9/app/src/main/res/layout/detail_semhas.xml" value="0.2" />
+        <entry key="..\:/Users/HAFIZ/StudioProjects/PTB_B_KEL_9/app/src/main/res/layout/detail_semhas.xml" value="0.22" />
         <entry key="..\:/Users/HAFIZ/StudioProjects/PTB_B_KEL_9/app/src/main/res/layout/edit_logbook.xml" value="0.19947916666666668" />
-        <entry key="..\:/Users/HAFIZ/StudioProjects/PTB_B_KEL_9/app/src/main/res/layout/form_edit_logbook.xml" value="0.209375" />
+        <entry key="..\:/Users/HAFIZ/StudioProjects/PTB_B_KEL_9/app/src/main/res/layout/form_detail_semhas.xml" value="0.209375" />
+        <entry key="..\:/Users/HAFIZ/StudioProjects/PTB_B_KEL_9/app/src/main/res/layout/form_detail_sidangta.xml" value="0.209375" />
+        <entry key="..\:/Users/HAFIZ/StudioProjects/PTB_B_KEL_9/app/src/main/res/layout/form_edit_logbook.xml" value="0.22" />
         <entry key="..\:/Users/HAFIZ/StudioProjects/PTB_B_KEL_9/app/src/main/res/layout/form_pendaftaran_ta.xml" value="0.209375" />
         <entry key="..\:/Users/HAFIZ/StudioProjects/PTB_B_KEL_9/app/src/main/res/layout/form_pengajuan_semhas.xml" value="0.209375" />
         <entry key="..\:/Users/HAFIZ/StudioProjects/PTB_B_KEL_9/app/src/main/res/layout/fragment_home.xml" value="0.209375" />
