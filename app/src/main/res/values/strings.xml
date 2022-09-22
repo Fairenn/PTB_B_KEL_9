@@ -2,4 +2,8 @@
     <string name="app_name">Pusat Tugas Akhir</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="welcome">Selamat Datang</string>
+    <string name="nama_mahasiswa">M Hafiz Aulia R</string>
+    <string name="pendaftaran_akhir">+ Pendaftaran Tugas Akhir</string>
+    <string name="nim_mahasiswa">2011522028</string>
 </resources>
