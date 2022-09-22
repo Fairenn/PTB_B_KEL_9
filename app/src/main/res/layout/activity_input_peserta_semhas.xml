@@ -75,7 +75,6 @@
             android:layout_width="115dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:android
             android:layout_marginLeft ="48dp"
             android:text="Hadir" />
 
