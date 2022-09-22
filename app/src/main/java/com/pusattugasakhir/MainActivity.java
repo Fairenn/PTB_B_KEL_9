@@ -13,14 +13,17 @@ import com.google.android.material.navigation.NavigationBarView;
 public class MainActivity extends AppCompatActivity {
 //komen ini
     BottomNavigationView bottomNavigation;
+    private Object login;
+
     @Override
+
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
         bottomNavigation = findViewById(R.id.bottom_navigation);
 
-        getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new HomeFragment()).commit();
+        getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new HomeFragment() ).commit();
 
         bottomNavigation.setOnItemSelectedListener(new NavigationBarView.OnItemSelectedListener() {
             @Override
@@ -28,20 +31,26 @@ public class MainActivity extends AppCompatActivity {
                 Fragment selectedFragment = null;
 
                 switch (item.getItemId()){
+
                     case R.id.nav_home:
                         selectedFragment = new HomeFragment();
+                        getSupportActionBar().setTitle("Beranda");
                         break;
                     case R.id.nav_logbook:
                         selectedFragment = new LogbookFragment();
+                        getSupportActionBar().setTitle("Logbook");
                         break;
                     case R.id.nav_profile:
                         selectedFragment = new ProfileFragment();
+                        getSupportActionBar().setTitle("Profile");
                         break;
                     case R.id.nav_semhas:
                         selectedFragment = new SemhasFragment();
+                        getSupportActionBar().setTitle("Seminar Hasil");
                         break;
                     case R.id.nav_sidangta:
                         selectedFragment = new SidangTAFragment();
+                        getSupportActionBar().setTitle("Sidang TA");
                         break;
 
 
