@@ -10,27 +10,32 @@
         android:id="@+id/textView15"
         android:layout_width="159dp"
         android:layout_height="39dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
         android:text="26 july 2022"
         android:textSize="24dp"
-        tools:layout_editor_absoluteX="33dp"
-        tools:layout_editor_absoluteY="36dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <LinearLayout
+        android:id="@+id/linearLayout2"
         android:layout_width="410dp"
         android:layout_height="234dp"
+        android:layout_marginTop="72dp"
+        android:background="#B2BEB5"
         android:orientation="vertical"
-        tools:layout_editor_absoluteX="1dp"
-        tools:layout_editor_absoluteY="76dp"
-        android:background="#B2BEB5">
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <TextView
             android:id="@+id/textView16"
             android:layout_width="match_parent"
             android:layout_height="52dp"
-            android:textSize="30dp"
             android:layout_marginTop="16dp"
             android:layout_marginleft="32dp"
-            android:text="Catatan 1" />
+            android:text="Catatan 1"
+            android:textSize="30dp" />
 
         <TextView
             android:id="@+id/textView18"
@@ -38,8 +43,9 @@
             android:layout_height="wrap_content"
             android:text="1. Bab 1 tidak jelas"
             android:textSize="20dp" />
+
         <TextView
-            android:id="@+id/textView18"
+            android:id="@+id/textView19"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="2. Penjelasan pada metode penelitian masih kurang"
@@ -49,10 +55,12 @@
     <LinearLayout
         android:layout_width="410dp"
         android:layout_height="234dp"
+        android:layout_marginTop="16dp"
         android:background="#B2BEB5"
         android:orientation="vertical"
-        tools:layout_editor_absoluteX="1dp"
-        tools:layout_editor_absoluteY="331dp">
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
 
         <TextView
             android:id="@+id/textView17"
@@ -64,7 +72,7 @@
             android:textSize="30dp" />
 
         <TextView
-            android:id="@+id/textView19"
+            android:id="@+id/textView20"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="1. Perlu perbaikan pada daftar rujukan"
