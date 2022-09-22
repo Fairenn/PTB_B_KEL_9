@@ -7,7 +7,7 @@
     tools:context=".login">
 
     <ImageView
-        android:id="@+id/imageView2"
+        android:id="@+id/logo_unand"
         android:layout_width="142dp"
         android:layout_height="141dp"
         android:layout_marginTop="128dp"
@@ -25,13 +25,18 @@
         android:textSize="24dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+        app:layout_constraintTop_toBottomOf="@+id/logo_unand" />
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/textInputLayout2"
-        android:layout_width="296dp"
-        android:layout_height="48dp"
+        style="@style/ThemeOverlay.Material3.AutoCompleteTextView.OutlinedBox"
+        android:id="@+id/textInputNIM"
+        android:layout_width="300dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="64dp"
         android:layout_marginTop="32dp"
+        android:layout_marginEnd="64dp"
+        android:hint="NIM
+"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView">
@@ -39,32 +44,36 @@
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="NIM" />
+            />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/textInputLayout3"
-        android:layout_width="296dp"
-        android:layout_height="48dp"
+        android:id="@+id/textInputPassword"
+        android:layout_width="300dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="64dp"
         android:layout_marginTop="32dp"
-        app:layout_constraintEnd_toEndOf="@+id/textInputLayout2"
-        app:layout_constraintStart_toStartOf="@+id/textInputLayout2"
-        app:layout_constraintTop_toBottomOf="@+id/textInputLayout2">
+        android:layout_marginEnd="64dp"
+        android:hint="Password"
+        app:endIconMode="password_toggle"
+        app:layout_constraintEnd_toEndOf="@+id/textInputNIM"
+        app:layout_constraintStart_toStartOf="@+id/textInputNIM"
+        app:layout_constraintTop_toBottomOf="@+id/textInputNIM">
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Password" />
+             />
     </com.google.android.material.textfield.TextInputLayout>
 
     <Button
         android:id="@+id/btnlogin"
-        android:layout_width="296dp"
-        android:layout_height="48dp"
+        android:layout_width="300dp"
+        android:layout_height="49dp"
         android:layout_marginTop="32dp"
         android:text="LOGIN"
-        app:layout_constraintEnd_toEndOf="@+id/textInputLayout3"
-        app:layout_constraintStart_toStartOf="@+id/textInputLayout3"
-        app:layout_constraintTop_toBottomOf="@+id/textInputLayout3"/>
+        app:layout_constraintEnd_toEndOf="@+id/textInputPassword"
+        app:layout_constraintStart_toStartOf="@+id/textInputPassword"
+        app:layout_constraintTop_toBottomOf="@+id/textInputPassword" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
