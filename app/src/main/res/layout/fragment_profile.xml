@@ -6,38 +6,20 @@
     android:layout_height="match_parent"
     tools:context=".ProfileFragment">
 
-    <Button
-        android:id="@+id/button12"
-        android:layout_width="200dp"
-        android:layout_height="50dp"
-        android:text="GANTI PASSWORD"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout3"
-        app:layout_constraintVertical_bias="0.295" />
-
-    <Button
-        android:id="@+id/button13"
-        android:layout_width="200dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="8dp"
-        android:backgroundTint="#FF0000"
-        android:text="LOGOUT"
-        app:layout_constraintEnd_toEndOf="@+id/button12"
-        app:layout_constraintStart_toStartOf="@+id/button12"
-        app:layout_constraintTop_toBottomOf="@+id/button12" />
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
 
     <LinearLayout
         android:id="@+id/linearLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="16dp"
         android:background="#009A4B"
         android:orientation="horizontal"
         android:padding="12dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
@@ -127,4 +109,24 @@
             android:textSize="22sp" />
 
     </LinearLayout>
+
+    <Button
+        android:id="@+id/button12"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:text="GANTI PASSWORD"
+        app:layout_constraintBottom_toTopOf="@+id/button13"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/button13"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:backgroundTint="#FF0000"
+        android:text="LOGOUT"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/button12"
+        app:layout_constraintStart_toStartOf="@+id/button12" />
+</LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
