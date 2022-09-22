@@ -1,6 +1,7 @@
 package com.pusattugasakhir;
 
 import androidx.annotation.NonNull;
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 
@@ -22,6 +23,8 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         bottomNavigation = findViewById(R.id.bottom_navigation);
+        //getSupportActionBar().setDisplayOptions(ActionBar.DISPLAY_SHOW_CUSTOM);
+        //getSupportActionBar().setCustomView(R.layout.toolbar_title_layout);
 
         getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new HomeFragment() ).commit();
 
