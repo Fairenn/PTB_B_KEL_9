@@ -2,11 +2,20 @@ package com.pusattugasakhir;
 
 import android.os.Bundle;
 
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+
+import com.pusattugasakhir.adapters.catatanAdapter;
+import com.pusattugasakhir.models.catatan;
+
+import java.util.ArrayList;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -19,6 +28,9 @@ public class LogbookFragment extends Fragment {
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
     private static final String ARG_PARAM2 = "param2";
+
+    private RecyclerView rvcatatan;
+
 
     // TODO: Rename and change types of parameters
     private String mParam1;
@@ -53,7 +65,34 @@ public class LogbookFragment extends Fragment {
             mParam1 = getArguments().getString(ARG_PARAM1);
             mParam2 = getArguments().getString(ARG_PARAM2);
         }
+        catatanAdapter adapter = new catatanAdapter();
+        LinearLayoutManager layoutManager = new LinearLayoutManager(getActivity());
+
+        rvcatatan.setLayoutManager(layoutManager);
+        rvcatatan.setAdapter(adapter);
+
     }
+
+    public ArrayList<catatan> getCatatan(){
+        ArrayList<catatan> listcatatan = new ArrayList<>();
+        listcatatan.add(new catatan(
+               "Catatan pak husnil",
+                "26 July 2022"
+
+        ));
+        listcatatan.add(new catatan(
+                "Catatan pak Fajril",
+                "30 July 2022"
+
+        ));
+        listcatatan.add(new catatan(
+                "Catatan buk welly",
+                "32 July 2022"
+
+        ));
+        return listcatatan;
+    }
+
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -61,4 +100,16 @@ public class LogbookFragment extends Fragment {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_logbook, container, false);
     }
+
+//    @Override
+//    public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
+//        super.onViewCreated(view, savedInstanceState);
+//
+//        datainitialize()
+//    }
+//
+//    private void datainitialize() {
+//
+//
+//    }
 }

@@ -11,7 +11,8 @@
         android:layout_width="match_parent"
         android:layout_height="168dp"
         android:layout_above="@+id/bottom_navigation"
-        android:layout_marginBottom="507dp" />
+        android:layout_marginTop="507dp"
+        android:layout_marginBottom="506dp" />
 
     <FrameLayout
         android:id="@+id/fragment_container2"

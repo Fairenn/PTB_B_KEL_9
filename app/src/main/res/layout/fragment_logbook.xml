@@ -6,32 +6,13 @@
     android:layout_height="match_parent"
     tools:context=".LogbookFragment">
 
-    <androidx.cardview.widget.CardView
-        android:id="@+id/card_view"
-        android:layout_width="match_parent"
-        android:layout_height="64dp"
-        android:layout_gravity="center"
-        app:cardCornerRadius="4dp"
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_catatan"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        tools:listitem="@layout/fragment_logbook2"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-<LinearLayout
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:orientation="vertical">
-
-    <TextView
-        android:id="@+id/catatan"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="CATATAN 1"
-        android:textSize="24sp" />
-
-        <TextView
-            android:id="@+id/info_text2"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:text="12/10/22" />
-</LinearLayout>
-    </androidx.cardview.widget.CardView>
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

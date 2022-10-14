@@ -26,6 +26,7 @@ public class HomeFieldFragment extends Fragment {
     private String mParam2;
 
     public HomeFieldFragment() {
+
         // Required empty public constructor
     }
 

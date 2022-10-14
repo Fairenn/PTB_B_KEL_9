@@ -4,6 +4,7 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
 import android.view.MenuItem;
@@ -15,6 +16,9 @@ public class MainActivity extends AppCompatActivity {
 //komen ini
     BottomNavigationView bottomNavigation;
     private Object login;
+
+    private RecyclerView rvcatatan;
+
 
     @Override
 
@@ -41,6 +45,7 @@ public class MainActivity extends AppCompatActivity {
                     case R.id.nav_logbook:
                         selectedFragment = new LogbookFragment();
                         getSupportActionBar().setTitle("Logbook");
+                        rvcatatan = findViewById(R.id.rv_catatan);
                         break;
                     case R.id.nav_profile:
                         selectedFragment = new ProfileFragment();
