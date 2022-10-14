@@ -20,13 +20,9 @@
             android:name=".form_detail_logbook"
             android:exported="false" />
         <activity
-            android:name=".login"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+            android:name=".login" android:theme="@style/Theme1.PusatTugasAkhir"
+            android:exported="false">
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity
             android:name=".form_pengajuan_sidang_ta"
@@ -46,6 +42,15 @@
         <activity
             android:name=".MainActivity"
             android:exported="false" />
+
+        <activity android:name=".tampilanAwal" android:theme="@style/Theme1.PusatTugasAkhir"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>
