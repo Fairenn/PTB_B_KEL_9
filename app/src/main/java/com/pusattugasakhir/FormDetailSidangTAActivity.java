@@ -18,7 +18,7 @@ public class FormDetailSidangTAActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                Intent intent = new Intent(FormDetailSidangTAActivity.this, Home.class);
+                Intent intent = new Intent(FormDetailSidangTAActivity.this, MainActivity.class);
                 startActivity(intent);
             }
         });
