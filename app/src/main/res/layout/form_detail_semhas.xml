@@ -34,7 +34,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginHorizontal="20dp"
-                    android:hint="@string/nama_mahasiswa" />
+                   />
             </com.google.android.material.textfield.TextInputLayout>
 
             <TextView
@@ -52,7 +52,7 @@
                 <com.google.android.material.textfield.TextInputEditText
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="@string/nim_mahasiswa"
+
                     android:layout_marginHorizontal="20dp"/>
             </com.google.android.material.textfield.TextInputLayout>
 
@@ -71,7 +71,7 @@
                 <com.google.android.material.textfield.TextInputEditText
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="PENERAPAN SISTEM INFORMASI"
+
                     android:layout_marginHorizontal="20dp"/>
             </com.google.android.material.textfield.TextInputLayout>
 
@@ -90,7 +90,7 @@
                 <com.google.android.material.textfield.TextInputEditText
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="Husnil Kamil M.T"
+
                     android:layout_marginHorizontal="20dp"/>
             </com.google.android.material.textfield.TextInputLayout>
 
@@ -109,7 +109,7 @@
                 <com.google.android.material.textfield.TextInputEditText
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="Jefril Rahmadoni, M.Kom"
+
                     android:layout_marginHorizontal="20dp"/>
             </com.google.android.material.textfield.TextInputLayout>
 
@@ -128,7 +128,7 @@
                 <com.google.android.material.textfield.TextInputEditText
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="Ricky Akbar M.Kom"
+
                     android:layout_marginHorizontal="20dp"/>
             </com.google.android.material.textfield.TextInputLayout>
 
@@ -147,7 +147,7 @@
                 <com.google.android.material.textfield.TextInputEditText
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="Prof. Ir Surya Afranius, M.Sc.,Ph.D"
+
                     android:layout_marginHorizontal="20dp"/>
             </com.google.android.material.textfield.TextInputLayout>
 
@@ -155,7 +155,7 @@
                 android:id="@+id/textView8"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Waktu"
+                android:text="Waktu (Jam)"
                 android:layout_marginLeft="20dp"/>
 
             <com.google.android.material.textfield.TextInputLayout
@@ -166,7 +166,6 @@
                 <com.google.android.material.textfield.TextInputEditText
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="13.30 - Selesai"
                     android:layout_marginHorizontal="20dp"/>
             </com.google.android.material.textfield.TextInputLayout>
 
@@ -185,7 +184,7 @@
                 <com.google.android.material.textfield.TextInputEditText
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="26 Oktober 2022"
+
                     android:layout_marginHorizontal="20dp"/>
             </com.google.android.material.textfield.TextInputLayout>
 
@@ -204,7 +203,6 @@
                 <com.google.android.material.textfield.TextInputEditText
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="Ruang Rapat JSI"
                     android:layout_marginHorizontal="20dp"/>
             </com.google.android.material.textfield.TextInputLayout>
 

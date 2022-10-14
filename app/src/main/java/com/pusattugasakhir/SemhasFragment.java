@@ -67,7 +67,7 @@ public class SemhasFragment extends Fragment {
         getbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getActivity(), form_pengajuan_sidang_ta.class);
+                Intent intent = new Intent(getActivity(), form_pengajuan_semhas.class);
                 startActivity(intent);
             }
         });
@@ -75,7 +75,7 @@ public class SemhasFragment extends Fragment {
 
 
     public void ajukan(View view) {
-        Intent intent = new Intent(getActivity(), form_pengajuan_sidang_ta.class);
+        Intent intent = new Intent(getActivity(), form_pengajuan_semhas.class);
         startActivity(intent);
     }
 

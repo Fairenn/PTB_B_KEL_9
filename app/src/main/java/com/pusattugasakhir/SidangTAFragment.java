@@ -1,7 +1,10 @@
 package com.pusattugasakhir;
 
+import android.content.Intent;
 import android.os.Bundle;
 
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
 import android.view.LayoutInflater;
@@ -56,9 +59,27 @@ public class SidangTAFragment extends Fragment {
     }
 
     @Override
+    public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
+        super.onViewCreated(view, savedInstanceState);
+        View getbtn = view.findViewById(R.id.btnajuta);
+        getbtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getActivity(), form_pengajuan_sidang_ta.class);
+                startActivity(intent);
+            }
+        });
+    }
+
+    public void ajukanta(View view) {
+        Intent intent = new Intent(getActivity(), form_pengajuan_sidang_ta.class);
+        startActivity(intent);
+    }
+    @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_sidang_t_a, container, false);
     }
+
 }

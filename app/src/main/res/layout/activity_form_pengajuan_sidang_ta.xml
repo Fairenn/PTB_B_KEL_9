@@ -124,11 +124,14 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/btnajukansidangta"
         android:layout_width="380dp"
         android:layout_height="42dp"
+        android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
-        android:text="Button"
-        app:layout_constraintTop_toBottomOf="@+id/textInputLayout12"
-        tools:layout_editor_absoluteX="16dp" />
+        android:layout_marginEnd="15dp"
+        android:text="Ajukan"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout12" />
 </androidx.constraintlayout.widget.ConstraintLayout>
