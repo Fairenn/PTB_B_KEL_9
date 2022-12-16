@@ -114,7 +114,6 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:text="Ajukan"
-        android:onClick="ajukansemhas"
 
         app:layout_constraintStart_toStartOf="@+id/textInputLayout31"
         app:layout_constraintTop_toBottomOf="@+id/textInputLayout31" />
