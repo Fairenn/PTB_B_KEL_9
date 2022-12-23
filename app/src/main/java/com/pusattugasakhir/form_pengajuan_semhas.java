@@ -1,8 +1,5 @@
 package com.pusattugasakhir;
 
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.app.NotificationCompat;
-
 import android.app.NotificationChannel;
 import android.app.NotificationManager;
 import android.app.PendingIntent;
@@ -11,11 +8,11 @@ import android.media.RingtoneManager;
 import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
-import android.view.LayoutInflater;
 import android.view.View;
-import android.view.ViewGroup;
 import android.widget.Button;
-import android.widget.Toast;
+
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.NotificationCompat;
 
 public class form_pengajuan_semhas extends AppCompatActivity {
     private Button btnajukansemhas;
@@ -30,7 +27,7 @@ public class form_pengajuan_semhas extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                Intent intent_semhas = new Intent(form_pengajuan_semhas.this, FormDetailSemhasActivity.class);
+                Intent intent_semhas = new Intent(form_pengajuan_semhas.this, input_peserta_semhas.class);
                 startActivity(intent_semhas);
                 intent_semhas.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
 
