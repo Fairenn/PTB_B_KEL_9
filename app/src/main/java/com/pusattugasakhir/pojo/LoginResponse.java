@@ -1,4 +1,4 @@
-package com.pusattugasakhir;
+package com.pusattugasakhir.pojo;
 
 import com.google.gson.annotations.SerializedName;
 

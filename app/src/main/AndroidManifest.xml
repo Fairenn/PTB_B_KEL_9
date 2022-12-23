@@ -29,9 +29,6 @@
             android:name=".FormDetailSidangTAActivity"
             android:exported="false" />
         <activity
-            android:name=".DummyActivity"
-            android:exported="false" />
-        <activity
             android:name=".input_peserta_semhas"
             android:exported="false" />
         <activity
