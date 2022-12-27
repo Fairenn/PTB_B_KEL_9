@@ -17,7 +17,7 @@ public class APIClient {
 
 
         retrofit = new Retrofit.Builder()
-                .baseUrl("http://ptb-api.husnilkamil.my.id")
+                .baseUrl("http://ptb-api.husnilkamil.my.id/")
                 .addConverterFactory(GsonConverterFactory.create())
                 .client(client)
                 .build();
@@ -27,4 +27,8 @@ public class APIClient {
         return retrofit;
     }
 
+    public static APIInterface getUserInterface(){
+        APIInterface apiInterface = getClient().create(APIInterface.class);
+        return apiInterface;
+    }
 }

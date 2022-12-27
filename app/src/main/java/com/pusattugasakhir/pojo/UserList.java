@@ -22,10 +22,10 @@ public class UserList {
 
         @SerializedName("id")
         public Integer id;
-        @SerializedName("first_name")
-        public String first_name;
-        @SerializedName("last_name")
-        public String last_name;
+        @SerializedName("username")
+        public String username;
+        @SerializedName("name")
+        public String name;
         @SerializedName("avatar")
         public String avatar;
 
