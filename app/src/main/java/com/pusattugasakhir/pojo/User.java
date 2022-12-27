@@ -3,7 +3,7 @@ package com.pusattugasakhir.pojo;
 import com.google.gson.annotations.SerializedName;
 
 public class User{
-
+//test
     @SerializedName("password")
     private String password;
 
