@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "618689211528",
+    "project_id": "ptb-b-64bba",
+    "storage_bucket": "ptb-b-64bba.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:618689211528:android:7e2bea14a7c05b9254c33d",
+        "android_client_info": {
+          "package_name": "com.pusattugasakhir"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "618689211528-sgoo0kjcqujvdkitea0fnmsv6m83enao.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCotxmnKl7SkTUiWr01WdJ1_Qk_x11j920"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "618689211528-sgoo0kjcqujvdkitea0fnmsv6m83enao.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
