@@ -3,6 +3,22 @@ package com.pusattugasakhir.pojo;
 import com.google.gson.annotations.SerializedName;
 
 public class User{
+//test
+    @SerializedName("password")
+    private String password;
+
+    @SerializedName("id")
+    private int id;
+
+    @SerializedName("name")
+    private String name;
+
+
+    @SerializedName("email")
+    private String email;
+
+    @SerializedName("username")
+    private String username;
 
     @SerializedName("role")
     private Object role;
@@ -34,11 +50,7 @@ public class User{
     @SerializedName("two_factor_recovery_codes")
     private Object twoFactorRecoveryCodes;
 
-    @SerializedName("name")
-    private String name;
 
-    @SerializedName("id")
-    private int id;
 
     @SerializedName("profile_photo_path")
     private Object profilePhotoPath;
@@ -46,11 +58,6 @@ public class User{
     @SerializedName("two_factor_secret")
     private Object twoFactorSecret;
 
-    @SerializedName("email")
-    private String email;
-
-    @SerializedName("username")
-    private String username;
 
     public Object getRole(){
         return role;
@@ -96,8 +103,25 @@ public class User{
         return name;
     }
 
+    public void setName(String name) {
+        this.name = name;
+    }
+
     public int getId(){
         return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public void setUsername(String username) {
+        this.username = username;
+    }
+    public String getPassword(){return password;}
+
+    public void setPassword(String password) {
+        this.password = password;
     }
 
     public Object getProfilePhotoPath(){
@@ -110,6 +134,10 @@ public class User{
 
     public String getEmail(){
         return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
     }
 
     public String getUsername(){

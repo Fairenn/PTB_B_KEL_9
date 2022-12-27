@@ -17,4 +17,12 @@ public class Authorisation{
     public String getToken(){
         return token;
     }
+
+    public void setToken(String token) {
+        this.token = token;
+    }
+
+    public void setType(String type) {
+        this.type = type;
+    }
 }
