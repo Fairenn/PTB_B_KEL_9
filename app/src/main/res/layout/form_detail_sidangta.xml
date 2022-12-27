@@ -39,7 +39,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginHorizontal="20dp"
-                    android:hint="@string/nama_mahasiswa" />
+                    android:hint="" />
             </com.google.android.material.textfield.TextInputLayout>
 
             <TextView
@@ -58,7 +58,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginHorizontal="20dp"
-                    android:hint="@string/nim_mahasiswa" />
+                    android:hint="" />
             </com.google.android.material.textfield.TextInputLayout>
 
             <TextView
@@ -77,7 +77,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginHorizontal="20dp"
-                    android:hint="PENERAPAN SISTEM INFORMASI" />
+                    android:hint="" />
             </com.google.android.material.textfield.TextInputLayout>
 
             <TextView
@@ -96,7 +96,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginHorizontal="20dp"
-                    android:hint="Husnil Kamil M.T" />
+                    android:hint="" />
             </com.google.android.material.textfield.TextInputLayout>
 
             <TextView
@@ -115,7 +115,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginHorizontal="20dp"
-                    android:hint="Jefril Rahmadoni, M.Kom" />
+                    android:hint="" />
             </com.google.android.material.textfield.TextInputLayout>
 
             <TextView
@@ -134,7 +134,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginHorizontal="20dp"
-                    android:hint="Ricky Akbar M.Kom" />
+                    android:hint="" />
             </com.google.android.material.textfield.TextInputLayout>
 
             <TextView
@@ -153,7 +153,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginHorizontal="20dp"
-                    android:hint="Prof. Ir Surya Afranius, M.Sc.,Ph.D" />
+                    android:hint="" />
             </com.google.android.material.textfield.TextInputLayout>
 
             <TextView
@@ -172,7 +172,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginHorizontal="20dp"
-                    android:hint="13.30 - Selesai" />
+                    android:hint="" />
             </com.google.android.material.textfield.TextInputLayout>
 
             <TextView
@@ -191,7 +191,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginHorizontal="20dp"
-                    android:hint="26 Oktober 2022" />
+                    android:hint="" />
             </com.google.android.material.textfield.TextInputLayout>
 
             <TextView
@@ -210,7 +210,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginHorizontal="20dp"
-                    android:hint="Ruang Rapat JSI" />
+                    android:hint="" />
             </com.google.android.material.textfield.TextInputLayout>
 
             <Button
