@@ -16,10 +16,18 @@
         android:theme="@style/Theme.PusatTugasAkhir"
         android:usesCleartextTraffic="true"
         tools:targetApi="31">
+        <activity
+            android:name=".gantiPasswordActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+
         <service
             android:name=".MyFirebaseMessagingService"
             android:enabled="true"
-            android:exported="false"></service>
+            android:exported="false" />
 
         <activity
             android:name=".FormDetailSemhasActivity"

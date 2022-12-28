@@ -38,7 +38,7 @@ public class ProfileFragment extends Fragment {
     private String mParam1;
     private String mParam2;
     private String usn,gettoken,token;
-    Button btnLogout;
+    Button btnLogout,btngantipass,btneditprofil;
 
     public ProfileFragment() {
         // Required empty public constructor
@@ -83,7 +83,22 @@ public class ProfileFragment extends Fragment {
                 logout();
             }
         });
+        btngantipass =rootview.findViewById(R.id.btnGantiPassword);
+        btngantipass.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                gantipass();
+            }
+        });
+        btneditprofil =rootview.findViewById(R.id.btneditprofil);
+        btneditprofil.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                editprofil();
+            }
+        });
         return rootview;
+
     }
 
 
@@ -115,5 +130,12 @@ public class ProfileFragment extends Fragment {
         });
 
     }
-
+        public void gantipass(){
+            Intent intent = new Intent(getActivity(), gantiPasswordActivity.class);
+            startActivity(intent);
+        }
+        public void editprofil(){
+            Intent intent = new Intent(getActivity(), ubah_profil.class);
+            startActivity(intent);
+        }
 }

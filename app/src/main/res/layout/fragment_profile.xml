@@ -5,7 +5,8 @@
     android:id="@+id/constraint"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ProfileFragment">
+    tools:context=".ProfileFragment"
+    >
 
 
     <androidx.appcompat.widget.Toolbar
@@ -39,7 +40,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
-        android:text="Dwiky Rahmat Fadhila"
+        android:text="@string/nama_mahasiswa"
         android:textColor="#FFFFFF"
         android:textColorHint="#FFFFFF"
         android:textSize="24sp"
@@ -53,7 +54,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-        android:text="1911529001"
+        android:text="@string/nim_mahasiswa"
         android:textColor="#FFFFFF"
         android:textSize="20sp"
         app:layout_constraintStart_toStartOf="@+id/profilNama"
@@ -88,7 +89,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
-        android:text="081270307448"
+        android:text="081273646132"
         android:textColor="#A1A0A0"
         android:textSize="16sp"
         app:layout_constraintStart_toStartOf="@+id/kota"
@@ -99,7 +100,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
-        android:text="1911529001_dwiky@student.unand.ac.id"
+        android:text="2011522028_m@student.unand.ac.id"
         android:textColor="#979696"
         android:textSize="16sp"
         app:layout_constraintStart_toStartOf="@+id/noHP"
@@ -125,5 +126,16 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btneditprofil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Edit Profil"
+        android:backgroundTint="@color/yellow"
+        app:layout_constraintBottom_toTopOf="@+id/btnGantiPassword"
+        app:layout_constraintEnd_toEndOf="@+id/btnGantiPassword"
+        app:layout_constraintHorizontal_bias="0.477"
+        app:layout_constraintStart_toStartOf="@+id/btnGantiPassword" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
