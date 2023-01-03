@@ -42,7 +42,7 @@
             android:name=".form_pengajuan_sidang_ta"
             android:exported="false" />
         <activity
-            android:name=".form_pengajuan_semhas"
+            android:name=".FormPengajuanSemhas"
             android:exported="false" />
         <activity
             android:name=".form_edit_logbook"

@@ -14,20 +14,19 @@ import android.widget.Button;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.NotificationCompat;
 
-public class form_pengajuan_semhas extends AppCompatActivity {
-    private Button btnajukansemhas;
+public class FormPengajuanSemhas extends AppCompatActivity {
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.form_pengajuan_semhas);
-
-        Button button = findViewById(R.id.btnajukansemhas);
+        Button button = findViewById(R.id.btnajukansemhasil);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
-                Intent intent_semhas = new Intent(form_pengajuan_semhas.this, input_peserta_semhas.class);
+                Intent intent_semhas = new Intent(FormPengajuanSemhas.this, MenuSemhasActivity.class);
                 startActivity(intent_semhas);
                 intent_semhas.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
 

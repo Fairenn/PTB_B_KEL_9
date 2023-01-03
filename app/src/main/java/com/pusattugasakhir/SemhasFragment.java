@@ -10,8 +10,6 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
-import android.widget.Toast;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -67,7 +65,7 @@ public class SemhasFragment extends Fragment {
         getbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getActivity(), form_pengajuan_semhas.class);
+                Intent intent = new Intent(getActivity(), FormPengajuanSemhas.class);
                 startActivity(intent);
             }
         });
@@ -75,7 +73,7 @@ public class SemhasFragment extends Fragment {
 
 
     public void ajukan(View view) {
-        Intent intent = new Intent(getActivity(), form_pengajuan_semhas.class);
+        Intent intent = new Intent(getActivity(), FormPengajuanSemhas.class);
         startActivity(intent);
     }
 

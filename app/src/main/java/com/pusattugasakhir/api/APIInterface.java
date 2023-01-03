@@ -23,7 +23,7 @@ public interface APIInterface {
     Call<LoginResponse> userLogin(
             @Field("username") String username,
             @Field("password") String password
-            );
+    );
 
     @POST("api/logout")
     Call<LogoutResponse> userLogout(

@@ -3,37 +3,30 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/LENOVO/AndroidStudioProjects/PusatTugasAkhir/app/src/main/res/layout/activity_form_detail_logbook.xml" value="0.22826086956521738" />
-        <entry key="..\:/Users/LENOVO/AndroidStudioProjects/PusatTugasAkhir/app/src/main/res/layout/activity_form_pengajuan_sidang_ta.xml" value="0.22826086956521738" />
-        <entry key="..\:/Users/LENOVO/AndroidStudioProjects/PusatTugasAkhir/app/src/main/res/layout/activity_input_peserta_semhas.xml" value="0.22826086956521738" />
-        <entry key="..\:/Users/LENOVO/AndroidStudioProjects/PusatTugasAkhir/app/src/main/res/layout/activity_main.xml" value="0.264" />
-        <entry key="..\:/Users/LENOVO/AndroidStudioProjects/PusatTugasAkhir/app/src/main/res/layout/activity_profile_pengguna.xml" value="0.22826086956521738" />
-        <entry key="..\:/Users/LENOVO/AndroidStudioProjects/PusatTugasAkhir/app/src/main/res/layout/activity_ubah_profil.xml" value="0.22826086956521738" />
-        <entry key="..\:/Users/LENOVO/AndroidStudioProjects/PusatTugasAkhir/app/src/main/res/layout/beranda.xml" value="0.22826086956521738" />
-        <entry key="..\:/Users/LENOVO/AndroidStudioProjects/PusatTugasAkhir/app/src/main/res/layout/daftar_ta.xml" value="0.22826086956521738" />
-        <entry key="..\:/Users/LENOVO/AndroidStudioProjects/PusatTugasAkhir/app/src/main/res/layout/detail_logbook.xml" value="0.22826086956521738" />
-        <entry key="..\:/Users/LENOVO/AndroidStudioProjects/PusatTugasAkhir/app/src/main/res/layout/detail_semhas.xml" value="0.22826086956521738" />
-        <entry key="..\:/Users/LENOVO/AndroidStudioProjects/PusatTugasAkhir/app/src/main/res/layout/edit_logbook.xml" value="0.22826086956521738" />
-        <entry key="..\:/Users/LENOVO/AndroidStudioProjects/PusatTugasAkhir/app/src/main/res/layout/form_detail_semhas.xml" value="0.22826086956521738" />
-        <entry key="..\:/Users/LENOVO/AndroidStudioProjects/PusatTugasAkhir/app/src/main/res/layout/form_detail_sidangta.xml" value="0.264" />
-        <entry key="..\:/Users/LENOVO/AndroidStudioProjects/PusatTugasAkhir/app/src/main/res/layout/form_edit_logbook.xml" value="0.264" />
-        <entry key="..\:/Users/LENOVO/AndroidStudioProjects/PusatTugasAkhir/app/src/main/res/layout/form_pendaftaran_ta.xml" value="0.264" />
-        <entry key="..\:/Users/LENOVO/AndroidStudioProjects/PusatTugasAkhir/app/src/main/res/layout/form_pengajuan_semhas.xml" value="0.264" />
-        <entry key="..\:/Users/LENOVO/AndroidStudioProjects/PusatTugasAkhir/app/src/main/res/layout/form_tambah_logbook.xml" value="0.264" />
-        <entry key="..\:/Users/LENOVO/AndroidStudioProjects/PusatTugasAkhir/app/src/main/res/layout/fragment_home.xml" value="0.264" />
-        <entry key="..\:/Users/LENOVO/AndroidStudioProjects/PusatTugasAkhir/app/src/main/res/layout/fragment_home_field.xml" value="0.264" />
-        <entry key="..\:/Users/LENOVO/AndroidStudioProjects/PusatTugasAkhir/app/src/main/res/layout/fragment_home_header.xml" value="0.264" />
-        <entry key="..\:/Users/LENOVO/AndroidStudioProjects/PusatTugasAkhir/app/src/main/res/layout/fragment_logbook.xml" value="0.264" />
-        <entry key="..\:/Users/LENOVO/AndroidStudioProjects/PusatTugasAkhir/app/src/main/res/layout/fragment_profile.xml" value="0.264" />
-        <entry key="..\:/Users/LENOVO/AndroidStudioProjects/PusatTugasAkhir/app/src/main/res/layout/fragment_semhas.xml" value="0.264" />
-        <entry key="..\:/Users/LENOVO/AndroidStudioProjects/PusatTugasAkhir/app/src/main/res/layout/fragment_sidang_t_a.xml" value="0.264" />
-        <entry key="..\:/Users/LENOVO/AndroidStudioProjects/PusatTugasAkhir/app/src/main/res/layout/ganti_password.xml" value="0.264" />
-        <entry key="..\:/Users/LENOVO/AndroidStudioProjects/PusatTugasAkhir/app/src/main/res/layout/logbook_ta.xml" value="0.22826086956521738" />
-        <entry key="..\:/Users/LENOVO/AndroidStudioProjects/PusatTugasAkhir/app/src/main/res/layout/login_main.xml" value="0.25" />
-        <entry key="..\:/Users/LENOVO/AndroidStudioProjects/PusatTugasAkhir/app/src/main/res/layout/profile.xml" value="0.22826086956521738" />
-        <entry key="..\:/Users/LENOVO/AndroidStudioProjects/PusatTugasAkhir/app/src/main/res/layout/tambah_logbook.xml" value="0.22826086956521738" />
-        <entry key="..\:/Users/LENOVO/AndroidStudioProjects/PusatTugasAkhir/app/src/main/res/layout/toolbar_title_layout.xml" value="0.25" />
-        <entry key="..\:/Users/LENOVO/AndroidStudioProjects/PusatTugasAkhir/app/src/main/res/layout/ubah_profil.xml" value="0.22826086956521738" />
+        <entry key="..\:/Users/HAFIZ/StudioProjects/PTB_B_KEL_9/app/src/main/res/drawable/button_home.xml" value="0.1" />
+        <entry key="..\:/Users/HAFIZ/StudioProjects/PTB_B_KEL_9/app/src/main/res/drawable/button_profil.xml" value="0.1" />
+        <entry key="..\:/Users/HAFIZ/StudioProjects/PTB_B_KEL_9/app/src/main/res/layout/activity_beranda.xml" value="0.209375" />
+        <entry key="..\:/Users/HAFIZ/StudioProjects/PTB_B_KEL_9/app/src/main/res/layout/activity_form_beranda.xml" value="0.209375" />
+        <entry key="..\:/Users/HAFIZ/StudioProjects/PTB_B_KEL_9/app/src/main/res/layout/activity_form_pengajuan_sidang_ta.xml" value="0.209375" />
+        <entry key="..\:/Users/HAFIZ/StudioProjects/PTB_B_KEL_9/app/src/main/res/layout/activity_main.xml" value="0.2" />
+        <entry key="..\:/Users/HAFIZ/StudioProjects/PTB_B_KEL_9/app/src/main/res/layout/activity_ubah_profil.xml" value="0.209375" />
+        <entry key="..\:/Users/HAFIZ/StudioProjects/PTB_B_KEL_9/app/src/main/res/layout/beranda.xml" value="0.22" />
+        <entry key="..\:/Users/HAFIZ/StudioProjects/PTB_B_KEL_9/app/src/main/res/layout/daftar_ta.xml" value="0.1984375" />
+        <entry key="..\:/Users/HAFIZ/StudioProjects/PTB_B_KEL_9/app/src/main/res/layout/detail_logbook.xml" value="0.1984375" />
+        <entry key="..\:/Users/HAFIZ/StudioProjects/PTB_B_KEL_9/app/src/main/res/layout/detail_semhas.xml" value="0.2" />
+        <entry key="..\:/Users/HAFIZ/StudioProjects/PTB_B_KEL_9/app/src/main/res/layout/edit_logbook.xml" value="0.19947916666666668" />
+        <entry key="..\:/Users/HAFIZ/StudioProjects/PTB_B_KEL_9/app/src/main/res/layout/form_edit_logbook.xml" value="0.209375" />
+        <entry key="..\:/Users/HAFIZ/StudioProjects/PTB_B_KEL_9/app/src/main/res/layout/form_pendaftaran_ta.xml" value="0.209375" />
+        <entry key="..\:/Users/HAFIZ/StudioProjects/PTB_B_KEL_9/app/src/main/res/layout/form_pengajuan_semhas.xml" value="0.209375" />
+        <entry key="..\:/Users/HAFIZ/StudioProjects/PTB_B_KEL_9/app/src/main/res/layout/fragment_home.xml" value="0.209375" />
+        <entry key="..\:/Users/HAFIZ/StudioProjects/PTB_B_KEL_9/app/src/main/res/layout/fragment_semhas.xml" value="0.209375" />
+        <entry key="..\:/Users/HAFIZ/StudioProjects/PTB_B_KEL_9/app/src/main/res/layout/fragment_sidang_t_a.xml" value="0.209375" />
+        <entry key="..\:/Users/HAFIZ/StudioProjects/PTB_B_KEL_9/app/src/main/res/layout/ganti_password.xml" value="0.33" />
+        <entry key="..\:/Users/HAFIZ/StudioProjects/PTB_B_KEL_9/app/src/main/res/layout/logbook_ta.xml" value="0.1984375" />
+        <entry key="..\:/Users/HAFIZ/StudioProjects/PTB_B_KEL_9/app/src/main/res/layout/profile.xml" value="0.19947916666666668" />
+        <entry key="..\:/Users/HAFIZ/StudioProjects/PTB_B_KEL_9/app/src/main/res/layout/tambah_logbook.xml" value="0.1984375" />
+        <entry key="..\:/Users/HAFIZ/StudioProjects/PTB_B_KEL_9/app/src/main/res/layout/ubah_profil.xml" value="0.19947916666666668" />
+        <entry key="..\:/Users/HAFIZ/StudioProjects/PTB_B_KEL_9/app/src/main/res/menu/bottom_navigation.xml" value="0.20833333333333334" />
       </map>
     </option>
   </component>
@@ -42,8 +35,5 @@
   </component>
   <component name="ProjectType">
     <option name="id" value="Android" />
-  </component>
-  <component name="SuppressKotlinCodeStyleNotification">
-    <option name="disableForAll" value="true" />
   </component>
 </project>
