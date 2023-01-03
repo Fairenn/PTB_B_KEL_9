@@ -22,7 +22,7 @@ public class ListPesertaSemhasActivity extends AppCompatActivity {
 
         rvPeserta = findViewById(R.id.rv_peserta_semhas);
 
-        PesertaAdapter adapter = new PesertaAdapter(new ArrayList<>());
+        PesertaAdapter adapter = new PesertaAdapter(getPeserta());
         LinearLayoutManager layoutManager = new LinearLayoutManager(this);
 
         rvPeserta.setLayoutManager(layoutManager);

@@ -2,24 +2,24 @@ package com.pusattugasakhir.models;
 
 public class Peserta {
 
-    String gambar;
+    String imagePeserta;
     String namaPeserta;
     String nimPeserta;
-    int status;
+    int imageStatus;
 
     public Peserta(){
 
     }
 
-    public Peserta(String gambar, String namaPeserta, String nimPeserta, int status) {
-        this.gambar = gambar;
+    public Peserta(String imagePeserta, String namaPeserta, String nimPeserta, int imageStatus) {
+        this.imagePeserta = imagePeserta;
         this.namaPeserta = namaPeserta;
         this.nimPeserta = nimPeserta;
-        this.status = status;
+        this.imageStatus = imageStatus;
     }
 
-    public void setGambar(String gambar) {
-        this.gambar = gambar;
+    public void setimagePeserta(String imagePeserta) {
+        this.imagePeserta = imagePeserta;
     }
 
     public void setNamaPeserta(String namaPeserta) {
@@ -30,12 +30,12 @@ public class Peserta {
         this.nimPeserta = nimPeserta;
     }
 
-    public void setStatus(int status) {
-        this.status = status;
+    public void setimageStatus(int imageStatus) {
+        this.imageStatus = imageStatus;
     }
 
-    public String getGambar() {
-        return gambar;
+    public String getimagePeserta() {
+        return imagePeserta;
     }
 
     public String getNamaPeserta() {
@@ -46,8 +46,8 @@ public class Peserta {
         return nimPeserta;
     }
 
-    public int getStatus() {
-        return status;
+    public int getimageStatus() {
+        return imageStatus;
     }
 
 
