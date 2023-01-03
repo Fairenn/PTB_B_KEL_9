@@ -19,7 +19,21 @@
         android:theme="@style/Theme.PusatTugasAkhir"
         tools:targetApi="31">
         <activity
+            android:name=".MenuSemhasActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name=".FormDetailSemhasActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".ListPesertaSemhasActivity"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"

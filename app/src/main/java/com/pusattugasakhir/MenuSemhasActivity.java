@@ -12,20 +12,23 @@ public class MenuSemhasActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu_semhas);
-        Button button1 = findViewById(R.id.btnlistpeserta);
-        button1.setOnClickListener(new View.OnClickListener() {
+        Button btnlistpes = findViewById(R.id.btnlistpeserta);
+        Button btndetsemhas = findViewById(R.id.btndetsemhasil);
+        btnlistpes.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent1 = new Intent(MenuSemhasActivity.this,ListPesertaSemhasActivity.class);
-                startActivity(intent1);
+//                Intent intentpeserta = new Intent(MenuSemhasActivity.this,ListPesertaSemhasActivity.class);
+//                startActivity(intentpeserta);
+                startActivity(new Intent(MenuSemhasActivity.this, ListPesertaSemhasActivity.class));
             }
         });
-        Button button2 = findViewById(R.id.btndetsemhasil);
-        button2.setOnClickListener(new View.OnClickListener() {
+
+        btndetsemhas.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent2 = new Intent(MenuSemhasActivity.this,FormDetailSemhasActivity.class);
-                startActivity(intent2);
+//                Intent intentdetailsemhas = new Intent(MenuSemhasActivity.this,FormDetailSemhasActivity.class);
+//                startActivity(intentdetailsemhas);
+                startActivity(new Intent(MenuSemhasActivity.this, FormDetailSemhasActivity.class));
             }
         });
     }
