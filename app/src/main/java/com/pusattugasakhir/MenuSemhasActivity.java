@@ -19,7 +19,7 @@ public class MenuSemhasActivity extends AppCompatActivity {
             public void onClick(View v) {
 //                Intent intentpeserta = new Intent(MenuSemhasActivity.this,ListPesertaSemhasActivity.class);
 //                startActivity(intentpeserta);
-                startActivity(new Intent(MenuSemhasActivity.this, ListPesertaSemhasActivity.class));
+                startActivity(new Intent(MenuSemhasActivity.this, DetailSemhasActivity.class));
             }
         });
 

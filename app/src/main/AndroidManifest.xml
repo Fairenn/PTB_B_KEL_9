@@ -17,6 +17,13 @@
         android:usesCleartextTraffic="true"
         tools:targetApi="31">
         <activity
+            android:name=".PesertaDetailActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name=".TambahPesertaActivity"
             android:exported="false">
             <meta-data
@@ -38,7 +45,7 @@
                 android:value="" />
         </activity>
         <activity
-            android:name=".ListPesertaSemhasActivity"
+            android:name=".DetailSemhasActivity"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"

@@ -1,5 +1,6 @@
 package com.pusattugasakhir.api;
 
+import com.pusattugasakhir.pojo.ListPesertaSemhasResponse;
 import com.pusattugasakhir.pojo.LoginRequest;
 import com.pusattugasakhir.pojo.LoginResponse;
 import com.pusattugasakhir.pojo.LogoutResponse;
@@ -27,6 +28,10 @@ public interface APIInterface {
 
     @POST("api/logout")
     Call<LogoutResponse> userLogout(
+            @Header("Authorization") String token
+    );
+    @GET("api/thesis/seminars/322/audiences")
+    Call<ListPesertaSemhasResponse> getListPesertaSemhas(
             @Header("Authorization") String token
     );
 

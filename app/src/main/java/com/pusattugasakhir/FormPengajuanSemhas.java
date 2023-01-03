@@ -3,7 +3,9 @@ package com.pusattugasakhir;
 import android.app.NotificationChannel;
 import android.app.NotificationManager;
 import android.app.PendingIntent;
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.media.RingtoneManager;
 import android.net.Uri;
 import android.os.Build;
@@ -14,16 +16,26 @@ import android.widget.Button;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.NotificationCompat;
 
+import com.pusattugasakhir.api.Config;
+
 public class FormPengajuanSemhas extends AppCompatActivity {
 
     Button btnajukansemhas;
-
+    String token, gettoken;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.form_pengajuan_semhas);
         btnajukansemhas = findViewById(R.id.btnajukansemhasil);
         btnajukansemhas.setOnClickListener(view -> {
+            getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
+            SharedPreferences sharedPreferences = getSharedPreferences("com.pusattugasakhir.SHARED_KEY", Context.MODE_PRIVATE);
+            gettoken = sharedPreferences.getString("token","");
+            token = "Bearer" +gettoken;
+
+            Config config = new Config();
+            //input post code disini
 
             Intent intent_ajusemhas = new Intent(FormPengajuanSemhas.this, MenuSemhasActivity.class);
             startActivity(intent_ajusemhas);

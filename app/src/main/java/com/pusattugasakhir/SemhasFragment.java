@@ -61,19 +61,19 @@ public class SemhasFragment extends Fragment {
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-        View getbtn = view.findViewById(R.id.btnajusemhas);
+        View getbtn = view.findViewById(R.id.btnLihatDetailSemHas);
         getbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getActivity(), FormPengajuanSemhas.class);
+                Intent intent = new Intent(getActivity(), DetailSemhasActivity.class);
                 startActivity(intent);
             }
         });
     }
 
 
-    public void ajukan(View view) {
-        Intent intent = new Intent(getActivity(), FormPengajuanSemhas.class);
+    public void lihatDetail(View view) {
+        Intent intent = new Intent(getActivity(), DetailSemhasActivity.class);
         startActivity(intent);
     }
 
