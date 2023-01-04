@@ -10,25 +10,26 @@
         android:id="@+id/textView27"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
+        android:layout_marginBottom="10dp"
         android:text="FORM PENGAJUAN SEMHAS"
         android:textSize="17dp"
         app:layout_constraintBottom_toTopOf="@+id/tILNamaAju"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.859" />
+        app:layout_constraintVertical_bias="0.666" />
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/tILNamaAju"
-        android:layout_width="380dp"
+        android:layout_width="370dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="96dp"
+        android:layout_marginTop="60dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/ETNamaAju"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Nama" />
@@ -36,13 +37,14 @@
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/tILNIMAju"
-        android:layout_width="380dp"
+        android:layout_width="370dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         app:layout_constraintStart_toStartOf="@+id/tILNamaAju"
         app:layout_constraintTop_toBottomOf="@+id/tILNamaAju">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/ETNimAju"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Nim" />
@@ -50,7 +52,7 @@
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/tILJudulAju"
-        android:layout_width="380dp"
+        android:layout_width="370dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
 
@@ -58,68 +60,102 @@
         app:layout_constraintTop_toBottomOf="@+id/tILNIMAju">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/ETJudulAju"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Judul" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/tILPembimbingAju"
-        android:layout_width="380dp"
+        android:id="@+id/tILPembiAju1"
+        android:layout_width="370dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         app:layout_constraintStart_toStartOf="@+id/tILJudulAju"
         app:layout_constraintTop_toBottomOf="@+id/tILJudulAju">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/ETPemAju1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Pembimbing" />
+            android:hint="Pembimbing 1" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/tILPengujiAju"
-        android:layout_width="380dp"
+        android:id="@+id/tILPembiAju2"
+        android:layout_width="370dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        app:layout_constraintStart_toStartOf="@+id/tILPembimbingAju"
-        app:layout_constraintTop_toBottomOf="@+id/tILPembimbingAju">
+        app:layout_constraintStart_toStartOf="@+id/tILPembiAju1"
+        app:layout_constraintTop_toBottomOf="@+id/tILPembiAju1">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/ETPemAju2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Penguji" />
+            android:hint="Pembimbing 2" />
     </com.google.android.material.textfield.TextInputLayout>
 
 
     <Button
         android:id="@+id/btnajukansemhasil"
-        android:layout_width="380dp"
+        android:layout_width="370dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="10dp"
         android:text="Ajukan"
-        app:layout_constraintStart_toStartOf="@+id/tILPengujiAju"
-        app:layout_constraintTop_toBottomOf="@+id/tILPengujiAju" />
+        app:layout_constraintStart_toStartOf="@+id/tILPengujiAju2"
+        app:layout_constraintTop_toBottomOf="@+id/tILPengujiAju2" />
 
     <ProgressBar
         android:id="@+id/pBAju"
         style="?android:attr/progressBarStyle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="100dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="16dp"
+        android:visibility="gone"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TvResponseAju" />
 
     <TextView
         android:id="@+id/TvResponseAju"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="48dp"
+        android:layout_marginTop="16dp"
         android:text="Response"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnajukansemhasil" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tILPengujiAju1"
+        android:layout_width="370dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="@+id/tILPembiAju2"
+        app:layout_constraintTop_toBottomOf="@+id/tILPembiAju2">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/ETUjiAju1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Penguji 1" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tILPengujiAju2"
+        android:layout_width="370dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="@+id/tILPengujiAju1"
+        app:layout_constraintTop_toBottomOf="@+id/tILPengujiAju1">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/ETUjiAju2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Penguji 2" />
+    </com.google.android.material.textfield.TextInputLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

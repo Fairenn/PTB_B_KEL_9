@@ -13,7 +13,6 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import com.pusattugasakhir.adapters.PesertaAdapter;
 import com.pusattugasakhir.api.APIClient;
-import com.pusattugasakhir.api.Config;
 import com.pusattugasakhir.pojo.AudiencesItem;
 import com.pusattugasakhir.pojo.ListPesertaSemhasResponse;
 
@@ -22,21 +21,29 @@ import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
 
-public class DetailSemhasActivity extends AppCompatActivity{
+public class ListPesertaSemhasActivity extends AppCompatActivity{
 
     private RecyclerView rvPeserta;
     String token, gettoken;
-    int id =312;
+    int id;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_detail_semhas);
+        setContentView(R.layout.activity_list_peserta_semhas);
 
+        rvPeserta = findViewById(R.id.rv_peserta_semhas);
+
+        PesertaAdapter adapter = new PesertaAdapter();
+        LinearLayoutManager layoutManager = new LinearLayoutManager(this);
+
+        rvPeserta.setLayoutManager(layoutManager);
+        rvPeserta.setAdapter(adapter);
         SharedPreferences sharedPreferences = getSharedPreferences("com.pusattugasakhir.SHARED_KEY", Context.MODE_PRIVATE);
         gettoken = sharedPreferences.getString("token", "");
-        token = "Bearer" + gettoken;
-//        id =
+        token = "Bearer " + gettoken;
+
+
 
 
 //        Config config = new Config();
@@ -49,7 +56,7 @@ public class DetailSemhasActivity extends AppCompatActivity{
                     @Override
                     public void onClick (View view){
 
-                    Intent intent_ajukan = new Intent(DetailSemhasActivity.this, FormPengajuanSemhas.class);
+                    Intent intent_ajukan = new Intent(ListPesertaSemhasActivity.this, FormPengajuanSemhas.class);
                     startActivity(intent_ajukan);
                 }
 
@@ -57,28 +64,19 @@ public class DetailSemhasActivity extends AppCompatActivity{
 //        }
 
 //        else if() {
-            rvPeserta = findViewById(R.id.rv_peserta_semhas);
-
-            PesertaAdapter adapter = new PesertaAdapter();
-
-            LinearLayoutManager layoutManager = new LinearLayoutManager(this);
-
-            rvPeserta.setLayoutManager(layoutManager);
-            rvPeserta.setAdapter(adapter);
-
-            getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
 
-//           retrfit2.Call<ListPesertaSemhasResponse> call = config.configRetrofit().getListPesertaSemhas(token,id);
-            retrofit2.Call<ListPesertaSemhasResponse> listPesertaSemhasResponseCall = APIClient.getUserInterface().getListPesertaSemhas(token,id);
+
+            retrofit2.Call<ListPesertaSemhasResponse> listPesertaSemhasResponseCall = APIClient.getUserInterface().getListPesertaSemhas(token);
             listPesertaSemhasResponseCall.enqueue(new Callback<ListPesertaSemhasResponse>() {
             @Override
             public void onResponse(Call<ListPesertaSemhasResponse> call, Response<ListPesertaSemhasResponse> response) {
-                Toast.makeText(DetailSemhasActivity.this, "BerHasil Mendapatkan Data", Toast.LENGTH_SHORT).show();
+                Toast.makeText(ListPesertaSemhasActivity.this, "BerHasil Mendapatkan Data", Toast.LENGTH_SHORT).show();
                 Log.d("ListPesertaSemHas-Debug", response.toString());
                 ListPesertaSemhasResponse getListPesertaSemhasResponse = response.body();
                 if (getListPesertaSemhasResponse != null) {
                     List<AudiencesItem> listAudiences = getListPesertaSemhasResponse.getAudiences();
+
                     Log.d("ListPesertaSemHas-Debug", String.valueOf(listAudiences.size()));
                     adapter.setItemAudiences(listAudiences);
                 }
@@ -86,7 +84,7 @@ public class DetailSemhasActivity extends AppCompatActivity{
 
             @Override
             public void onFailure(Call<ListPesertaSemhasResponse> call, Throwable t) {
-                Toast.makeText(DetailSemhasActivity.this, "Gagal Mendapatkan Data", Toast.LENGTH_SHORT).show();
+                Toast.makeText(ListPesertaSemhasActivity.this, "Gagal Mendapatkan Data", Toast.LENGTH_SHORT).show();
             }
             });
             Button btntambah = findViewById(R.id.btnTambahPeserta);
@@ -94,10 +92,21 @@ public class DetailSemhasActivity extends AppCompatActivity{
                 @Override
                 public void onClick(View view) {
 
-                    Intent intent_tambah = new Intent(DetailSemhasActivity.this, TambahPesertaActivity.class);
+                    Intent intent_tambah = new Intent(ListPesertaSemhasActivity.this, TambahPesertaActivity.class);
                     startActivity(intent_tambah);
                 }
             });
+        Button btndetail = findViewById(R.id.btnLihatDetail);
+        btndetail.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                Intent intent_lihatDetail = new Intent(ListPesertaSemhasActivity.this, FormDetailSemhasActivity.class);
+
+                startActivity(intent_lihatDetail);
+
+            }
+        });
 //        }
     }
 

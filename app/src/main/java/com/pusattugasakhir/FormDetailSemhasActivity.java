@@ -13,14 +13,6 @@ public class FormDetailSemhasActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_form_detail_semhas);
-        Button button = findViewById(R.id.btnokdetailsemhas);
-        button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
 
-                Intent intent = new Intent(FormDetailSemhasActivity.this, MainActivity.class);
-                startActivity(intent);
-            }
-        });
     }
 }

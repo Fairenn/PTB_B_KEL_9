@@ -65,15 +65,17 @@ public class SemhasFragment extends Fragment {
         getbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getActivity(), DetailSemhasActivity.class);
-                startActivity(intent);
+                Intent intentDetail = new Intent(getActivity(), ListPesertaSemhasActivity.class);
+                intentDetail.putExtra("IdPeserta",312);
+                startActivity(intentDetail);
+
             }
         });
     }
 
 
     public void lihatDetail(View view) {
-        Intent intent = new Intent(getActivity(), DetailSemhasActivity.class);
+        Intent intent = new Intent(getActivity(), ListPesertaSemhasActivity.class);
         startActivity(intent);
     }
 

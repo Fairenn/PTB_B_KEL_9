@@ -11,7 +11,7 @@ public class Peserta {
 
     }
 
-    public Peserta(String imagePeserta, String namaPeserta, String nimPeserta, int imageStatus) {
+    public Peserta(String imagePeserta, String namaPeserta, String nimPeserta) {
         this.imagePeserta = imagePeserta;
         this.namaPeserta = namaPeserta;
         this.nimPeserta = nimPeserta;

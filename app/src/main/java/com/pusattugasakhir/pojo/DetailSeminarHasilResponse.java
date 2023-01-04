@@ -59,6 +59,7 @@ public class DetailSeminarHasilResponse {
     @SerializedName("status")
     private int status;
 
+
     public int getRoomId(){
         return roomId;
     }

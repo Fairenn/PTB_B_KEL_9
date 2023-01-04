@@ -27,14 +27,14 @@ public class TambahPesertaActivity extends AppCompatActivity {
         Config config = new Config();
 
         //input post code disini
-
+        
         //btn input peserta dan balik ke list peserta semhas
         Button btntmbhpeserta = findViewById(R.id.btnTambahPesertaSemHas);
         btntmbhpeserta.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
-                Intent intent_tmbh = new Intent(TambahPesertaActivity.this, DetailSemhasActivity.class);
+                Intent intent_tmbh = new Intent(TambahPesertaActivity.this, ListPesertaSemhasActivity.class);
                 startActivity(intent_tmbh);
             }
         });

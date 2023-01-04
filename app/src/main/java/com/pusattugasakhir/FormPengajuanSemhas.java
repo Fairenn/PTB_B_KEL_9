@@ -10,7 +10,6 @@ import android.media.RingtoneManager;
 import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
-import android.view.View;
 import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -39,7 +38,7 @@ public class FormPengajuanSemhas extends AppCompatActivity {
 
 
 
-            Intent intent_ajusemhas = new Intent(FormPengajuanSemhas.this, DetailSemhasActivity.class);
+            Intent intent_ajusemhas = new Intent(FormPengajuanSemhas.this, ListPesertaSemhasActivity.class);
             startActivity(intent_ajusemhas);
 
             intent_ajusemhas.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);

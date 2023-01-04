@@ -6,6 +6,7 @@ import com.pusattugasakhir.pojo.LoginRequest;
 import com.pusattugasakhir.pojo.LoginResponse;
 import com.pusattugasakhir.pojo.LogoutResponse;
 import com.pusattugasakhir.pojo.MultipleResource;
+import com.pusattugasakhir.pojo.PermintaanPengajuanResponse;
 import com.pusattugasakhir.pojo.User;
 import com.pusattugasakhir.pojo.UserList;
 
@@ -37,10 +38,19 @@ public interface APIInterface {
             @Header("Authorization") String token,
             @Path("id") int thesis_id
     );
-    @GET("api/thesis/seminars/{id}/audiences")
+    @GET("api/thesis/seminars/312/audiences")
     Call<ListPesertaSemhasResponse> getListPesertaSemhas(
-            @Header("Authorization") String token,
-            @Path("id") int id
+            @Header("Authorization") String token
+//            @Path("id") int id
+    );
+
+    @POST("api/theses/{id}/seminars")
+    Call<PermintaanPengajuanResponse> postPengajuanSemhas(
+
+    );
+    @POST("api/thesis/seminars/{id}/audiences")
+    Call<ListPesertaSemhasResponse> postListPesertaSemhas(
+
     );
 
 
