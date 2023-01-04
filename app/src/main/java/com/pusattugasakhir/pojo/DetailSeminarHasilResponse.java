@@ -3,7 +3,7 @@ package com.pusattugasakhir.pojo;
 import java.util.List;
 import com.google.gson.annotations.SerializedName;
 
-public class Response{
+public class DetailSeminarHasilResponse {
 
     @SerializedName("room_id")
     private int roomId;

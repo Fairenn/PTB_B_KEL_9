@@ -1,5 +1,6 @@
 package com.pusattugasakhir.api;
 
+import com.pusattugasakhir.pojo.DetailSeminarHasilResponse;
 import com.pusattugasakhir.pojo.ListPesertaSemhasResponse;
 import com.pusattugasakhir.pojo.LoginRequest;
 import com.pusattugasakhir.pojo.LoginResponse;
@@ -15,6 +16,7 @@ import retrofit2.http.FormUrlEncoded;
 import retrofit2.http.GET;
 import retrofit2.http.Header;
 import retrofit2.http.POST;
+import retrofit2.http.Path;
 import retrofit2.http.Query;
 
 public interface APIInterface {
@@ -30,10 +32,17 @@ public interface APIInterface {
     Call<LogoutResponse> userLogout(
             @Header("Authorization") String token
     );
-    @GET("api/thesis/seminars/322/audiences")
-    Call<ListPesertaSemhasResponse> getListPesertaSemhas(
-            @Header("Authorization") String token
+    @GET("api/theses/{thesis_id}/seminars")
+    Call<DetailSeminarHasilResponse> getDetailSeminarHasil(
+            @Header("Authorization") String token,
+            @Path("id") int thesis_id
     );
+    @GET("api/thesis/seminars/{id}/audiences")
+    Call<ListPesertaSemhasResponse> getListPesertaSemhas(
+            @Header("Authorization") String token,
+            @Path("id") int id
+    );
+
 
 //    @POST("api/me")
 //    Call<>

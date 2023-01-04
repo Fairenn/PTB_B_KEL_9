@@ -56,14 +56,13 @@ public class PesertaAdapter extends RecyclerView.Adapter<PesertaAdapter.PesertaV
 
     public class PesertaViewHolder extends RecyclerView.ViewHolder{
 
-        public ImageView imageStatus,imagePeserta;
+        public ImageView imagePeserta;
         public TextView textNamaPeserta, textNimPeserta;
 
         public PesertaViewHolder(@NonNull View itemView)
         {
             super(itemView);
             imagePeserta = itemView.findViewById(R.id.imagePeserta);
-            imageStatus = itemView.findViewById(R.id.imageStatus);
             textNamaPeserta = itemView.findViewById(R.id.textNamaPeserta);
             textNimPeserta = itemView.findViewById(R.id.textNimPeserta);
 

@@ -5,7 +5,7 @@ public class Peserta {
     String imagePeserta;
     String namaPeserta;
     String nimPeserta;
-    int imageStatus;
+
 
     public Peserta(){
 
@@ -15,7 +15,7 @@ public class Peserta {
         this.imagePeserta = imagePeserta;
         this.namaPeserta = namaPeserta;
         this.nimPeserta = nimPeserta;
-        this.imageStatus = imageStatus;
+
     }
 
     public void setimagePeserta(String imagePeserta) {
@@ -30,9 +30,7 @@ public class Peserta {
         this.nimPeserta = nimPeserta;
     }
 
-    public void setimageStatus(int imageStatus) {
-        this.imageStatus = imageStatus;
-    }
+
 
     public String getimagePeserta() {
         return imagePeserta;
@@ -46,9 +44,7 @@ public class Peserta {
         return nimPeserta;
     }
 
-    public int getimageStatus() {
-        return imageStatus;
-    }
+
 
 
 

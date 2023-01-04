@@ -37,8 +37,11 @@ public class FormPengajuanSemhas extends AppCompatActivity {
             Config config = new Config();
             //input post code disini
 
-            Intent intent_ajusemhas = new Intent(FormPengajuanSemhas.this, MenuSemhasActivity.class);
+
+
+            Intent intent_ajusemhas = new Intent(FormPengajuanSemhas.this, DetailSemhasActivity.class);
             startActivity(intent_ajusemhas);
+
             intent_ajusemhas.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
 
             PendingIntent pendingIntent = PendingIntent.getActivity(getApplicationContext(), 0, intent_ajusemhas, PendingIntent.FLAG_ONE_SHOT);
@@ -61,5 +64,9 @@ public class FormPengajuanSemhas extends AppCompatActivity {
 
 
         });
+        Intent ajuSemhasIntent = getIntent();
+        if(ajuSemhasIntent != null){
+
+        }
     }
 }

@@ -6,22 +6,21 @@
     android:layout_height="match_parent"
     tools:context=".FormPengajuanSemhas">
 
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/textInputLayout29"
-        android:layout_width="380dp"
+    <TextView
+        android:id="@+id/textView27"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        app:layout_constraintStart_toStartOf="@+id/textInputLayout28"
-        app:layout_constraintTop_toBottomOf="@+id/textInputLayout28">
-
-        <com.google.android.material.textfield.TextInputEditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Penguji" />
-    </com.google.android.material.textfield.TextInputLayout>
+        android:layout_marginBottom="16dp"
+        android:text="FORM PENGAJUAN SEMHAS"
+        android:textSize="17dp"
+        app:layout_constraintBottom_toTopOf="@+id/tILNamaAju"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.859" />
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/textInputLayout22"
+        android:id="@+id/tILNamaAju"
         android:layout_width="380dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="96dp"
@@ -36,12 +35,12 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/textInputLayout23"
+        android:id="@+id/tILNIMAju"
         android:layout_width="380dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        app:layout_constraintStart_toStartOf="@+id/textInputLayout22"
-        app:layout_constraintTop_toBottomOf="@+id/textInputLayout22">
+        app:layout_constraintStart_toStartOf="@+id/tILNamaAju"
+        app:layout_constraintTop_toBottomOf="@+id/tILNamaAju">
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
@@ -50,13 +49,13 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/textInputLayout24"
+        android:id="@+id/tILJudulAju"
         android:layout_width="380dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
 
-        app:layout_constraintStart_toStartOf="@+id/textInputLayout23"
-        app:layout_constraintTop_toBottomOf="@+id/textInputLayout23">
+        app:layout_constraintStart_toStartOf="@+id/tILNIMAju"
+        app:layout_constraintTop_toBottomOf="@+id/tILNIMAju">
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
@@ -65,17 +64,31 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/textInputLayout28"
+        android:id="@+id/tILPembimbingAju"
         android:layout_width="380dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        app:layout_constraintStart_toStartOf="@+id/textInputLayout24"
-        app:layout_constraintTop_toBottomOf="@+id/textInputLayout24">
+        app:layout_constraintStart_toStartOf="@+id/tILJudulAju"
+        app:layout_constraintTop_toBottomOf="@+id/tILJudulAju">
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Pembimbing" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tILPengujiAju"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="@+id/tILPembimbingAju"
+        app:layout_constraintTop_toBottomOf="@+id/tILPembimbingAju">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Penguji" />
     </com.google.android.material.textfield.TextInputLayout>
 
 
@@ -85,19 +98,28 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:text="Ajukan"
-        app:layout_constraintStart_toStartOf="@+id/textInputLayout29"
-        app:layout_constraintTop_toBottomOf="@+id/textInputLayout29" />
+        app:layout_constraintStart_toStartOf="@+id/tILPengujiAju"
+        app:layout_constraintTop_toBottomOf="@+id/tILPengujiAju" />
 
-    <TextView
-        android:id="@+id/textView27"
+    <ProgressBar
+        android:id="@+id/pBAju"
+        style="?android:attr/progressBarStyle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
-        android:text="FORM PENGAJUAN SEMHAS"
-        android:textSize="17dp"
-        app:layout_constraintBottom_toTopOf="@+id/textInputLayout22"
+        android:layout_marginBottom="100dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/TvResponseAju"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:text="Response"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.859" />
+        app:layout_constraintTop_toBottomOf="@+id/btnajukansemhasil" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

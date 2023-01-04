@@ -50,8 +50,6 @@ public class User{
     @SerializedName("two_factor_recovery_codes")
     private Object twoFactorRecoveryCodes;
 
-
-
     @SerializedName("profile_photo_path")
     private Object profilePhotoPath;
 
