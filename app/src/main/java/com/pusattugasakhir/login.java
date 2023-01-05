@@ -60,13 +60,8 @@ public class login extends AppCompatActivity {
 
     public void login(String username, String password) {
         LoginRequest loginRequest = new LoginRequest();
-//        loginRequest.setUsername(usn);
-//        loginRequest.setPassword(pw);
-//
-//        String username = til_edit_usn.getEditText().toString();
-//        String password = til_edit_pw.getEditText().toString();
 
-        Toast.makeText(this, username + "+ " + password, Toast.LENGTH_SHORT).show();
+//        Toast.makeText(this, username + "+ " + password, Toast.LENGTH_SHORT).show();
 
         Call<LoginResponse> loginResponseCall = APIClient.getUserInterface().userLogin(username, password);
         loginResponseCall.enqueue(new Callback<LoginResponse>() {
@@ -112,46 +107,6 @@ public class login extends AppCompatActivity {
 
     }
 
-//        Button btnlogin = findViewById(R.id.btnlogin1);
-//
-//        apiInterface = APIClient.getClient().create(APIInterface.class);
-//
-//        btnlogin.setOnClickListener(v -> {
-//
-//            TextInputLayout username = (TextInputLayout) findViewById(R.id.textInputNIM);
-//            String strname = username.getEditText().getText().toString();
-//
-//            TextInputLayout password = (TextInputLayout) findViewById(R.id.textInputPassword);
-//            String strpass = password.getEditText().getText().toString();
-//
-//            Toast.makeText(this, strname +" "+ strpass, Toast.LENGTH_SHORT).show();
-//
-//            Call<LoginResponse> call = apiInterface.userLogin(strname, strpass);
-//            call.enqueue(new Callback<LoginResponse>() {
-//                @Override
-//                public void onResponse(Call<LoginResponse> call, Response<LoginResponse> response) {
-//                    Log.d("TAG", response.code()+"");
-//                    String displayResponse="";
-//
-//                    LoginResponse loginResponse = response.body();
-//                    String token = loginResponse.getAuthorisation().getToken();
-//
-//
-////                         Perintah Intent Explicit pindah halaman ke activity_detail
-//                     Intent intent = new Intent(login.this, MainActivity.class);
-//                     startActivity(intent);
-//
-//                }
-//
-//                @Override
-//                public void onFailure(Call<LoginResponse> call, Throwable t) {
-//                    Log.d("TAG", t.getMessage());
-//
-//                }
-//            });
-//
-//
-//        });
 
 
 }

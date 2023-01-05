@@ -1,5 +1,6 @@
 package com.pusattugasakhir.api;
 
+import com.pusattugasakhir.pojo.CreatePesertaSemhasResponse;
 import com.pusattugasakhir.pojo.DetailSeminarHasilResponse;
 import com.pusattugasakhir.pojo.ListPesertaSemhasResponse;
 import com.pusattugasakhir.pojo.LoginRequest;
@@ -29,10 +30,18 @@ public interface APIInterface {
             @Field("password") String password
     );
 
+    @FormUrlEncoded
+    @POST("api/thesis/seminars/{id}/audiences?student_id={student_id}")
+    Call<CreatePesertaSemhasResponse> tambahPeserta(
+            @Header("Authorization") String token,
+            @Path("id") int id,
+            @Field ("student_id") int idNim
+    );
     @POST("api/logout")
     Call<LogoutResponse> userLogout(
             @Header("Authorization") String token
     );
+    @FormUrlEncoded
     @GET("api/theses/{thesis_id}/seminars")
     Call<DetailSeminarHasilResponse> getDetailSeminarHasil(
             @Header("Authorization") String token,
@@ -52,6 +61,7 @@ public interface APIInterface {
     Call<ListPesertaSemhasResponse> postListPesertaSemhas(
 
     );
+
 
 
 //    @POST("api/me")

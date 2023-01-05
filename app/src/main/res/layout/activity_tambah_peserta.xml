@@ -18,7 +18,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/textInputNamaPeserta"
+        android:id="@+id/textInputIdPeserta"
         android:layout_width="350dp"
         android:layout_height="50dp"
         android:layout_marginTop="50dp"
@@ -27,33 +27,20 @@
         app:layout_constraintTop_toBottomOf="@+id/textView32">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editIdNim"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Nama Peserta" />
-    </com.google.android.material.textfield.TextInputLayout>
-
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/textInputNIMPeserta"
-        android:layout_width="350dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        app:layout_constraintStart_toStartOf="@+id/textInputNamaPeserta"
-        app:layout_constraintTop_toBottomOf="@+id/textInputNamaPeserta">
-
-        <com.google.android.material.textfield.TextInputEditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="NIM Peserta" />
+            android:hint="ID NIM Peserta" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <Button
         android:id="@+id/btnTambahPesertaSemHas"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="20dp"
         android:text="Tambah Peserta"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textInputNIMPeserta" />
+        app:layout_constraintTop_toBottomOf="@+id/textInputIdPeserta" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -44,9 +44,7 @@ public class ListPesertaSemhasActivity extends AppCompatActivity{
         token = "Bearer " + gettoken;
 
         Integer id = sharedPreferences.getInt("id", 0);
-        Integer thesis_id = sharedPreferences.getInt("thesis_id",0);
-        String nama = sharedPreferences.getString("name","");
-        String nim = sharedPreferences.getString("username","");
+
 
 
 
@@ -104,7 +102,6 @@ public class ListPesertaSemhasActivity extends AppCompatActivity{
             public void onClick(View view) {
 
                 Intent intent_lihatDetail = new Intent(ListPesertaSemhasActivity.this, FormDetailSemhasActivity.class);
-                intent_lihatDetail.putExtra("thesis_id",);
                 startActivity(intent_lihatDetail);
 
             }

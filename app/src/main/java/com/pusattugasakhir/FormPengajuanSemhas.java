@@ -29,7 +29,7 @@ public class FormPengajuanSemhas extends AppCompatActivity {
         btnajukansemhas.setOnClickListener(view -> {
             getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
-            SharedPreferences sharedPreferences = getSharedPreferences("com.pusattugasakhir.SHARED_KEY", Context.MODE_PRIVATE);
+            SharedPreferences sharedPreferences = getSharedPreferences("userkey", Context.MODE_PRIVATE);
             gettoken = sharedPreferences.getString("token","");
             token = "Bearer" +gettoken;
 
