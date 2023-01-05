@@ -51,8 +51,8 @@
 
         <TextView
             android:id="@+id/textNimPeserta"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="151dp"
+            android:layout_height="19dp"
             android:layout_marginTop="8dp"
             android:text="NIM"
             android:textSize="12sp"

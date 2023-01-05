@@ -10,6 +10,7 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Toast;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -66,18 +67,19 @@ public class SemhasFragment extends Fragment {
             @Override
             public void onClick(View view) {
                 Intent intentDetail = new Intent(getActivity(), ListPesertaSemhasActivity.class);
-                intentDetail.putExtra("IdPeserta",312);
+                intentDetail.putExtra("IdPeserta",getId());
                 startActivity(intentDetail);
 
             }
         });
+
     }
 
 
-    public void lihatDetail(View view) {
-        Intent intent = new Intent(getActivity(), ListPesertaSemhasActivity.class);
-        startActivity(intent);
-    }
+//    public void lihatDetail(View view) {
+//        Intent intent = new Intent(getActivity(), ListPesertaSemhasActivity.class);
+//        startActivity(intent);
+//    }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,

@@ -38,10 +38,10 @@ public interface APIInterface {
             @Header("Authorization") String token,
             @Path("id") int thesis_id
     );
-    @GET("api/thesis/seminars/312/audiences")
+    @GET("api/thesis/seminars/{id}/audiences")
     Call<ListPesertaSemhasResponse> getListPesertaSemhas(
-            @Header("Authorization") String token
-//            @Path("id") int id
+            @Header("Authorization") String token,
+            @Path("id") int id
     );
 
     @POST("api/theses/{id}/seminars")

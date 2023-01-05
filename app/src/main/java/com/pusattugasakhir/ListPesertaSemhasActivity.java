@@ -1,5 +1,6 @@
 package com.pusattugasakhir;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -25,7 +26,6 @@ public class ListPesertaSemhasActivity extends AppCompatActivity{
 
     private RecyclerView rvPeserta;
     String token, gettoken;
-    int id;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,9 +39,14 @@ public class ListPesertaSemhasActivity extends AppCompatActivity{
 
         rvPeserta.setLayoutManager(layoutManager);
         rvPeserta.setAdapter(adapter);
-        SharedPreferences sharedPreferences = getSharedPreferences("com.pusattugasakhir.SHARED_KEY", Context.MODE_PRIVATE);
+        SharedPreferences sharedPreferences = getSharedPreferences("userkey", Context.MODE_PRIVATE);
         gettoken = sharedPreferences.getString("token", "");
         token = "Bearer " + gettoken;
+
+        Integer id = sharedPreferences.getInt("id", 0);
+        Integer thesis_id = sharedPreferences.getInt("thesis_id",0);
+        String nama = sharedPreferences.getString("name","");
+        String nim = sharedPreferences.getString("username","");
 
 
 
@@ -62,22 +67,19 @@ public class ListPesertaSemhasActivity extends AppCompatActivity{
 
             });
 //        }
-
 //        else if() {
-
-
-
-            retrofit2.Call<ListPesertaSemhasResponse> listPesertaSemhasResponseCall = APIClient.getUserInterface().getListPesertaSemhas(token);
+            retrofit2.Call<ListPesertaSemhasResponse> listPesertaSemhasResponseCall = APIClient.getUserInterface().getListPesertaSemhas(token,id);
             listPesertaSemhasResponseCall.enqueue(new Callback<ListPesertaSemhasResponse>() {
+            @SuppressLint("LongLogTag")
             @Override
             public void onResponse(Call<ListPesertaSemhasResponse> call, Response<ListPesertaSemhasResponse> response) {
                 Toast.makeText(ListPesertaSemhasActivity.this, "BerHasil Mendapatkan Data", Toast.LENGTH_SHORT).show();
-                Log.d("ListPesertaSemHas-Debug", response.toString());
+                Log.d("ListPesertaSemHasActivity-Debug", response.toString());
                 ListPesertaSemhasResponse getListPesertaSemhasResponse = response.body();
                 if (getListPesertaSemhasResponse != null) {
                     List<AudiencesItem> listAudiences = getListPesertaSemhasResponse.getAudiences();
 
-                    Log.d("ListPesertaSemHas-Debug", String.valueOf(listAudiences.size()));
+                    Log.d("ListPesertaSemHasActivity-Debug", String.valueOf(listAudiences.size()));
                     adapter.setItemAudiences(listAudiences);
                 }
             }
@@ -102,7 +104,7 @@ public class ListPesertaSemhasActivity extends AppCompatActivity{
             public void onClick(View view) {
 
                 Intent intent_lihatDetail = new Intent(ListPesertaSemhasActivity.this, FormDetailSemhasActivity.class);
-
+                intent_lihatDetail.putExtra("thesis_id",);
                 startActivity(intent_lihatDetail);
 
             }

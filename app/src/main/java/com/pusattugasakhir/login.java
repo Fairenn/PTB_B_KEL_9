@@ -27,6 +27,7 @@ public class login extends AppCompatActivity {
     Button btn_login;
     String usn, pw;
 
+
     APIInterface apiInterface;
 
     @Override
@@ -78,6 +79,7 @@ public class login extends AppCompatActivity {
                         String name = loginResponse.getUser().getName();
                         String username = loginResponse.getUser().getUsername();
                         String eml = loginResponse.getUser().getEmail();
+                        int idMhs = loginResponse.getUser().getId();
                         Log.i("success", token);
                         SharedPreferences sharedPreferences = getSharedPreferences("userkey", MODE_PRIVATE);
                         SharedPreferences.Editor editor = sharedPreferences.edit();
@@ -85,6 +87,7 @@ public class login extends AppCompatActivity {
                         editor.putString("name", name);
                         editor.putString("email", eml);
                         editor.putString("username", username);
+                        editor.putInt("id",idMhs);
                         Log.d("email", eml);
                         editor.apply();
                         new Handler().postDelayed(new Runnable() {
